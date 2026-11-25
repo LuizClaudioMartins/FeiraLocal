@@ -30,13 +30,13 @@ O design do sistema foi fundamentado no atendimento direto a duas personas centr
 
 ---
 
-## ♿ Acessibilidade &amp; Diretrizes WCAG 2.1 (Nível AA)
+## ♿ Acessibilidade > Diretrizes WCAG 2.1 (Nível AA)
 
 A interface cumpre rigorosamente as normas internacionais de acessibilidade digital:
 
 1. **Alvos de Toque Ergonômicos:** Todos os botões, chips e controles de incremento/decremento respeitam a área mínima recomendada de **48dp × 48dp** (com botão principal atingindo 54dp), prevenindo toques acidentais por mãos trêmulas ou dedos calejados.
 2. **Alto Contraste Visual:** 
-   * Texto principal (`#212121`) sobre fundo claro (`#F9FBE7`): **16.1:1** (superando amplamente o mínimo exigido de 4.5:1).
+   * Texto principal (#212121) sobre fundo claro (#F9FBE7): **16.1:1** (superando amplamente o mínimo exigido de 4.5:1).
    * Botão de Ação CTA Laranja (`#E65100`) com texto branco: **4.8:1** (conforme a WCAG para elementos interativos).
 3. **Prevenção de Erros &amp; Feedback Visual:** Telas de estado vazio amigáveis, máscaras de senha com alternância explícita textual (*"Ver"* / *"Ocultar"*) e confirmação visual de pedidos com modalidade de entrega calculada em tempo real.
 
@@ -46,9 +46,9 @@ A interface cumpre rigorosamente as normas internacionais de acessibilidade digi
 
 * **Linguagem:** Kotlin 1.9+ (Null Safety estrita, tipos imutáveis e lambdas de alta ordem).
 * **Interface:** Jetpack Compose &amp; Material Design 3.
-* **Layouts Eficientes:** `LazyColumn` e `LazyRow` para reciclagem reativa de nós visuais em memória, evitando quedas de quadros (*jank*).
-* **Gerenciamento de Estado:** `mutableStateListOf` e `mutableStateOf` com recomposição inteligente e isolamento em camada singleton de dados (`AppData`).
-* **Design System Centralizado:** Paleta semântica com tokens declarativos em `ui.theme/Color.kt` e `Theme.kt`.
+* **Layouts Eficientes:** LazyColumn e LazyRow para reciclagem reativa de nós visuais em memória, evitando quedas de quadros (*jank*).
+* **Gerenciamento de Estado:** mutableStateListOf e mutableStateOf com recomposição inteligente e isolamento em camada singleton de dados (AppData).
+* **Design System Centralizado:** Paleta semântica com tokens declarativos em ui.theme/Color.kt e Theme.kt.
 
 ---
 
@@ -76,7 +76,7 @@ com.example.feiralocal/
 1. Clone o repositório ou faça o download dos arquivos:
 
 ```
-git clone [suspicious link removed]
+git clone https://github.com/LuizClaudioMartins/FeiraLocal.git
 
 ```
 
